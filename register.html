@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    .auth-buttons {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .auth-buttons a {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #ffd700;
+      color: black;
+    }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div style="display: flex; gap: 20px; margin-top: 100px; justify-content: center; align-items: center;">
+
+        <div style="position: relative; width: 350px; height: 450px;">
+            <img src="https://www.shutterstock.com/shutterstock/videos/1104540861/thumb/6.jpg?ip=x480"
+                alt="101010 image"
+                style="width: 100%; height: 100%; object-fit: cover; border: 3px solid red; border-radius: 15px;">
+            <div
+                style="position: absolute; top: 20px; left: 0; right: 0; text-align: center; color: white; font-weight: bold; font-size: 18px;">
+                <p style="border: 2px solid white; border-radius: 10px; padding: 5px 10px; display: inline-block;">
+                    frontend and backend
+                </p><br>
+                <h1 style="font-weight: bold;">Learn to program by watching professionals</h1>
+
+                <h1 style="font-size: 12px;">See how experienced developers solve problems in real time</h1>
+
+
+            </div>
+            <footer
+                style="background-color: green; color: white; padding: 10px; position: absolute; text-align: center; bottom: -3px ; left: 2px; border-radius: 0 0 9px 9px; width: calc(100% - 20px);">
+                <p style="margin: 0;">Try it free 7 days, then $20/mo</p>
+            </footer>
+
+
+        </div>
+
+        <div style="border-radius: 15px; text-align: center; width: 350px; height: 450px; background-color: white;">
+            <h1 style="font-weight: bold;">Sign up for the course and get free 7 days</h1>
+
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="name" required
+                style="border: none; border-bottom: 2px solid black; outline: none;"
+                style="border: none; border-bottom: 2px solid black; outline: none;"><br><br>
+
+            <label for="lastname"></label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname" required
+                style="border: none; border-bottom: 2px solid black; outline: none;"><br><br>
+
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required
+                style="border: none; border-bottom: 2px solid black; outline: none;"><br><br>
+
+            <label for="password"></label><br>
+            <input type="password" id="password" name="password" placeholder="password" required
+                style="border: none; border-bottom: 2px solid black; outline: none;"><br><br>
+
+            <a href="home.html" style="display: inline-block; background-color: blue; color: white; 
+                border-radius: 6px; width: 53%; height: 30px; line-height: 30px; 
+                text-align: center; text-decoration: none;">
+                Claim your free trial
+            </a><br><br>
+
+
+            <button style="border: 0px; background-color: white; border-radius: 6px; width: 50%; height: 22px;"><a
+                    href="login.html">login</a></button>
+
+            <p style="font-size: 12px;">By clicking the button, you are agreeing to our <u style="color: red;">Terms and
+                    service</u></p>
+
+
+            <div class="auth-buttons">
+                <a href="kirish.html">Bosh sahifa</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Style Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: dimgrey;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #444;
+      height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 100;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    .auth-buttons {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .auth-buttons a {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #ffd700;
+      color: black;
+    }
+
+    .video-grid {
+      margin-left: 220px;
+      margin-top: 40px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      max-width: 1280px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="home.html">🏠 Home</a>
+    <a href="shots.html">🎬 Shorts</a>
+    <a href="#">📺 Subscriptions</a>
+  </div>
+
+  <div class="auth-buttons">
+    <a href="kirish.html">Chiqish</a>
+  </div>
+
+  <div class="video-grid">
+    <div><iframe src="https://www.youtube.com/embed/bZ0hRDN6VXI" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/XOEn3ZppjFA" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/iAhU5CqKk8A" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/cbTm9-gRmZM" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/OIOmKgFCs3g" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/QcMBd1F95qA" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/sUByjnABI0E" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/2eElkGOFVWA" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/dZ5Llkr8DUA?si=6QwQW4Xa54jaD8Vs"allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/dDIuu6otnQU?si=3xeFiLd-sDwGY_4W" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/BuE1T53Hmts?si=5VyNZ1kFhK98fbPw" allowfullscreen></iframe></div>
+    <div><iframe src="https://www.youtube.com/embed/uVCDKfV69wA?si=L8DRFwFzZp2sh9sL" allowfullscreen></iframe></div>
+  </div>
+
+</body>
+</html>
